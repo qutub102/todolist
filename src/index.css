@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.main_div{
+  height: 100vh;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_div .box{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  border: 2px solid  black;
+  height: 500px;
+  width: 350px;
+  border-radius: 65px;
+  background-color: aqua;
+  box-shadow: 0px 0px 30px 10px cyan
+}
+.main_div .box .heading{
+  background-color: brown;
+  width: 100%;
+  height: 5rem;
+  margin-top: 0px;
+  border-top-left-radius: 64px;
+  border-top-right-radius: 64px;
+  text-align: center;
+  border-bottom: 5px solid black;
+}
+.main_div .box .form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.main_div .box .form input{
+  background: transparent;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid black ;
+  outline: none;
+}
+::placeholder{
+  color: black;
+  font-family: cursive;
+  text-align: center;
+}
+.main_div .box .form button{
+  border-radius: 50px;
+  margin-left: 10px;
+  background-color: brown;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 0px 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.main_div .box .form button:hover{
+  background-color: white;
+  color: blueviolet;
+}
+.main_div .box ol li{
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style: none;
+  margin: 5px 0px;
+}
+.main_div .box ol li .icon_del{
+  margin-right: 8px;
+  outline: none;
+  cursor: pointer;
+}
+.main_div .box ol li{
+  display: flex;
+}
+.main_div .box ol li .icon .icon_del:hover{
+  color: red;
+}
+.main_div .box .form .icon_add:hover{
+  color: green;
+}
+@media only screen and (max-width:375px){
+  .main_div .box{
+    height: 450px;
+    width: 330px;
+  }
+}
+@media only screen and (max-width: 320px){
+.main_div .box {
+    height: 435px;
+    width: 275px;
+  }
+  .main_div{
+    height: 160vh;
+  }
+}
